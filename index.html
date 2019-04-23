@@ -1,68 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <title>Welcome!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
 
-<meta charset="UTF-8">
-<title>Bare - Start Bootstrap Template</title>
-
-<!-- All the bootstrap stuff -->
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<link rel="shortcut icon" type="image/icon" href="http://marjorieg18.com/favicon.ico"/>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">HOME</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1 class="mt-5">Marjorie's Website</h1>
-          <ul class="list-unstyled">
-            <li>Using Bootstrap</li>
-            <li>and nice CS things</li>
-          </ul>
-        </div>
-      </div>
-
-     <div>
-        <a target="_blank" href="http://google.com">Link to Google</a>
-     </div>
-     <div class="col-lg-4 offset-lg-4 text-center">
-        <p>Centered Paragraph with 4/12 offset <br> With a line break too!</p>
-     </div>
-     <div>
-     	<label>Resume:</label>
-        <a target="_blank" href="resume.pdf">Alan Burstein Resume</a>
-     </div>
-     <div class="col-lg-2 offset-lg-2"><img src="elon.jpg" alt="" /></div>
-
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Marjorie's Freshman Experience</h1>      
+    <p>My First Year at Boston University Through Photos
+    </p>
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>September-October: New Beginnings!</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="helloboston.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>My first week at BU, I said "Hello" to Boston and explored the city! Here's me at Primark :)</p>
+    </div>
+    <div class="col-sm-3">
+      <img src="september2.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>Freshman year would be incomplete without Lucky Charms Chen, my friend's pitbull. Always a good boy <3</p>
+    </div>
+    <div class="col-sm-3"> 
+        <img src="september3.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <p>One of my best friends celebrated her 19th birthday on October 5th. This is us before going out to dinner at the North End!</p>
+    </div>
+    <div class="col-sm-3">
+        <img src="september4.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <p>I love exploring a city's music scene, and expanding my taste. This is from a Troye Sivan concert for his Bloom Tour!</p>
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+    <h3>November-December: Happy Holidays!</h3><br>
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="november1.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <p>First snow was super exciting!</p>
+      </div>
+      <div class="col-sm-3">
+        <img src="november2.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <p>Happy Friendsgiving from the gorls!</p>
+      </div>
+      <div class="col-sm-3"> 
+          <img src="november3.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <p>My family friend Christina came to visit me. This is us at the North End!</p>
+      </div>
+      <div class="col-sm-3">
+          <img src="november4.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <p>When I went home for winter break, I met up with my friends, and we went to CottonHi in LA!</p>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container-fluid bg-3 text-center">    
+  <h3>January: Costa Rica!</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="january1.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>My friend Christina and I went Xtreme Ziplining in Monteverde; these are our guides!</p>
+    </div>
+    <div class="col-sm-3">
+      <img src="january2.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>Christina and I went to Playa Jaco, one of the more touristy beaches in Costa Rica!</p>
+    </div>
+    <div class="col-sm-3"> 
+        <img src="january3.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <p>After a long day of traveling, we went to get dinner to eat Gallo Pinto!</p>
+    </div>
+    <div class="col-sm-3">
+        <img src="january4.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <p>Last day in Costa Rica, and I had a lovely dinner date with my mom :)</p>
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+    <h3>February-March: First Boston Winter!</h3><br>
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="february1.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <p>My roommate Sophia and I went to the Esplanade when we first got back!</p>
+      </div>
+      <div class="col-sm-3">
+        <img src="february2.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <p>No Valentine this year sad :/ but Calista was my date for Wahlburgers! <3</p>
+      </div>
+      <div class="col-sm-3"> 
+          <img src="february3.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <p>I got a bid from Sigma Delta Tau after sorority recruitment!</p>
+      </div>
+      <div class="col-sm-3">
+          <img src="february4.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <p>This is me at Umami Burger in LA over spring break!</p>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container-fluid bg-3 text-center">    
+      <h3>April-May: Getting Ready For Summer!</h3><br>
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="april1.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <p>I get my big and my twin for Sigma Delta Tau! I love Eva and Lani :)</p>
+        </div>
+        <div class="col-sm-3">
+          <img src="april2.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <p>I finally got initiated as a sister, and Lucky was there to celebrate with me!</p>
+        </div>
+        <div class="col-sm-3"> 
+            <img src="april3.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <p>Marathon Monday was a fun day!</p>
+        </div>
+        <div class="col-sm-3">
+            <img src="april5.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <p>Spring is finally here! :')</p>
+        </div>
+      </div>
+    </div><br>
+  
+
+  
+
+
+<footer class="container-fluid text-center">
+  <p>Copyright Marjorie Talavera</p>
+</footer>
 
 </body>
-
 </html>
