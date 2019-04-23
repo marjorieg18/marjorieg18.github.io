@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
 
@@ -55,7 +56,7 @@
   </div>
 </div>
   
-<div class="container-fluid bg-3 text-center">    
+<div class="container-fluid bg-3 text-center subreveal">    
   <h3>September-October: New Beginnings!</h3><br>
   <div class="row">
     <div class="col-sm-3">
@@ -77,7 +78,7 @@
   </div>
 </div><br>
 
-<div class="container-fluid bg-3 text-center">    
+<div class="container-fluid bg-3 text-center headline">    
     <h3>November-December: Happy Holidays!</h3><br>
     <div class="row">
       <div class="col-sm-3">
@@ -99,7 +100,7 @@
     </div>
   </div><br>
 
-  <div class="container-fluid bg-3 text-center">    
+  <div class="container-fluid bg-3 text-center tagline">    
   <h3>January: Costa Rica!</h3><br>
   <div class="row">
     <div class="col-sm-3">
@@ -121,7 +122,7 @@
   </div>
 </div><br>
 
-<div class="container-fluid bg-3 text-center">    
+<div class="container-fluid bg-3 text-center tagline">    
     <h3>February-March: First Boston Winter!</h3><br>
     <div class="row">
       <div class="col-sm-3">
@@ -143,7 +144,7 @@
     </div>
   </div><br>
 
-  <div class="container-fluid bg-3 text-center">    
+  <div class="container-fluid bg-3 text-center tagline">    
       <h3>April-May: Getting Ready For Summer!</h3><br>
       <div class="row">
         <div class="col-sm-3">
@@ -164,6 +165,14 @@
         </div>
       </div>
     </div><br>
+
+    <script>
+            ScrollReveal().reveal('.subreveal', {delay: 1000});
+            ScrollReveal().reveal('.headline', {delay: 2000});
+            ScrollReveal().reveal('.tagline', {delay: 3000});
+            ScrollReveal().reveal('.heckline', {delay: 4000});
+            ScrollReveal().reveal('.wackline', {deelay: 5000});
+    </script>
   
 
   
